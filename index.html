@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Life Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Productivity Dashboard</h1>
+
+      <p id="greeting"></p>
+
+      <time id="clock"></time>
+
+      <button id="theme-toggle">Theme</button>
+    </header>
+
+    <main>
+      <section id="timer-section">
+        <h2>Pomodoro Timer</h2>
+
+        <time id="timer">25:00</time>
+
+        <div class="controls">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+      </section>
+
+      <!--  -->
+      <section id="todo-section">
+        <h2>To-Do List</h2>
+
+        <form id="task-form">
+          <input type="text" id="task-input" placeholder="Add new task" />
+
+          <button type="submit">Add</button>
+        </form>
+
+        <ul id="task-list"></ul>
+      </section>
+
+      <section id="links-section">
+        <h2>Productivity Links</h2>
+        <p>Save your favorite websites for quick access anytime!</p>
+
+        <form id="link-form">
+          <input type="text" id="link-name" placeholder="Site name" />
+
+          <input type="url" id="link-url" placeholder="https://" />
+
+          <button type="submit">Add Link</button>
+        </form>
+
+        <nav>
+          <ul id="links-list"></ul>
+        </nav>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Vinzyti • Productivity Dashboard</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
